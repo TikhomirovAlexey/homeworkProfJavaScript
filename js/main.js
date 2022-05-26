@@ -9,9 +9,9 @@ const products = [
 const renderProduct = ({ id, title, price }, img = "img/image.jpg") => {
     return `<div class="product-item">
                 <h3 class="card-heading">${title}</h3>
-                <img src="${img}" alt="img">
+                <img class="img" src="${img}" alt="img">
                 <p class="card-price">${price}</p>
-                <button class="buy-btn btn-cart">Купить</button>
+                <button class="btn product-item__btn">Купить</button>
             </div>`
 };
 const renderPage = list => {

@@ -7,12 +7,12 @@ $color-blue-lighten-13: lighten($color-blue, 13.5%)
 *
     margin: 0
     padding: 0
+    box-sizing: border-box
 
 .container
     max-width: $width-site
     margin: 0 auto
     padding: 0 2%
-    box-sizing: border-box
 
 .flex
     display: flex
@@ -26,12 +26,12 @@ $color-blue-lighten-13: lighten($color-blue, 13.5%)
         @extend .flex
         justify-content: right
 
-.btn-cart
+.btn
     color: #fff
     background-color: $color-blue-darken
     border: 1px solid transparent
     border-radius: 5px
-    padding: 5px 10px
+    padding: 5px 15px
     &:hover
         color: $color-blue-darken
         background-color: #fff
@@ -51,12 +51,21 @@ $color-blue-lighten-13: lighten($color-blue, 13.5%)
     width: 23%
     min-height: 400px
     border-radius: 5px
-    @extend .flex
+    display: flex
     flex-direction: column
     justify-content: space-around
+    padding: 15px
+    &__btn
+        align-self: flex-end
+        margin-right: 20px
 
 .card-heading
     font-size: 24px
+    margin-left: 15px
+
+.img
+    align-self: center
 
 .card-price
     font-size: 18px
+    align-self: center
