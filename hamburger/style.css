@@ -1,0 +1,22 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+p {
+  font-size: 18px;
+  min-width: 50%;
+}
+/*# sourceMappingURL=style.css.map */

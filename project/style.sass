@@ -1,0 +1,74 @@
+$width-site: 1340px
+$color-blue: #bad7fd
+$color-blue-darken: darken($color-blue, 25%)
+$color-blue-lighten-10: lighten($color-blue, 10%)
+$color-blue-lighten-13: lighten($color-blue, 13.5%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container
+    max-width: $width-site
+    margin: 0 auto
+    padding: 0 2%
+
+.flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+.header
+    background-color: $color-blue
+    &-wrapper
+        height: 50px
+        @extend .flex
+        justify-content: right
+
+.btn
+    color: #fff
+    background-color: $color-blue-darken
+    border: 1px solid transparent
+    border-radius: 5px
+    padding: 5px 15px
+    &:hover
+        color: $color-blue-darken
+        background-color: #fff
+        border: 1px solid $color-blue-darken
+
+.main
+    background-color: $color-blue-lighten-10
+    padding: 50px 0
+
+.products
+    min-height: 400px
+    @extend .flex
+    justify-content: space-around
+
+.product-item
+    background-color: $color-blue-lighten-13
+    width: 23%
+    min-height: 350px
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    padding: 15px
+    &__btn
+        align-self: flex-end
+        margin-right: 20px
+
+.card-heading
+    font-size: 24px
+    margin-left: 15px
+    margin-bottom: 12px
+
+.img
+    align-self: center
+    margin-bottom: 18px
+    width: 95%
+
+.card-price
+    font-size: 18px
+    align-self: center
+    margin-bottom: 12px
