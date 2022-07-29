@@ -23,6 +23,15 @@ button:focus {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
+    letter-spacing: 5px;
+}
+
+.logo-text span {
+    font-size: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding-left: 3px;
+    margin-right: 5px;
 }
 
 .logo-img {
@@ -81,7 +90,7 @@ img {
 }
 
 .desc {
-    background-color: #f3f7f6;
+    background-color: #f4fcf9;
     padding: 15px
 }
 
